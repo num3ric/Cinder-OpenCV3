@@ -29,8 +29,8 @@ void ocvBasicApp::setup()
 
 	cv::medianBlur( input, output, 11 );
 // Uncomment these to try different operations
-//	cv::Sobel( input, output, CV_8U, 0, 1 );
-//	cv::threshold( input, output, 128, 255, CV_8U );
+	cv::Sobel( input, output, CV_8U, 0, 1 );
+	cv::threshold( input, output, 128, 255, CV_8U );
 
 	mTexture = gl::Texture::create( fromOcv( output ) );
 }   

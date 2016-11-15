@@ -9,10 +9,12 @@
 
 boost/
 build/
-
+*.VC.db
+*.VC.opendb
 # Windows cruft
 *.suo
 *.ncb
 *.sdf
+
 Debug/
 Release/
